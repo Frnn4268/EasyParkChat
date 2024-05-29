@@ -71,7 +71,7 @@ Contributions are welcome! Please feel free to fork the repository and submit pu
 ![Avatar](https://drive.google.com/uc?export=download&id=1AngR7B2LK7B_UwATREDhRGcXWXkcMwxa)
    
 7. Home:
-![Home](https://drive.google.com/file/d/1KHYSnoDQjYo_0r31bLTfzZInjpSMj5Qd/view?usp=sharing)
+![Home](https://drive.google.com/uc?export=download&id=1KHYSnoDQjYo_0r31bLTfzZInjpSMj5Qd)
    
 9. Chat:
 ![Chat](https://drive.google.com/uc?export=download&id=1UJc5VPja0sKNQ3bFhByoByMCQZWfuuf9)
