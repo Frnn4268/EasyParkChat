@@ -22,8 +22,8 @@ To install EasyPark Chat locally, follow these steps:
 	npm install
 
 	- For the Client
-> cd client
-npm install
+	> cd client
+	npm install
 
 4. Set up environment variables:
 	- Create a .env file in the server directory.
