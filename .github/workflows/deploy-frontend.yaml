@@ -7,13 +7,13 @@ on:
 
 jobs:
   host-1:
-    runs-on: chat-easypark-deploy
+    runs-on: chat-easypark-deploy 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       
       # Setup Node.js with version 20
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: 20
       
@@ -22,7 +22,7 @@ jobs:
         run: npm install
       
       # Create .env file in public directory
-      - name: Adding env file
+      name: Adding env file
         run: echo "REACT_APP_API_URL=${{ secrets.BACKEND_URL }}" > public/.env
 
       # Build the React app in the public directory
@@ -53,15 +53,14 @@ jobs:
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST1 }}
-
   host-2:
-    runs-on: self-hosted
+    runs-on: chat-easypark-deploy  
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       
       # Setup Node.js with version 20
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: 20
       
@@ -70,7 +69,7 @@ jobs:
         run: npm install
       
       # Create .env file in public directory
-      - name: Adding env file
+      name: Adding env file
         run: echo "REACT_APP_API_URL=${{ secrets.BACKEND_URL }}" > public/.env
 
       # Build the React app in the public directory
