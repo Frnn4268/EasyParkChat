@@ -1,18 +1,25 @@
 # EasyPark Chat
+
+![GitHub stars](https://img.shields.io/github/stars/Frnn4268/EasyParkChat.svg)
+![GitHub forks](https://img.shields.io/github/forks/Frnn4268/EasyParkChat.svg)
+![GitHub issues](https://img.shields.io/github/issues/Frnn4268/EasyParkChat.svg)
+
+## Project Description
+
 EasyPark Chat is a full-stack chat application designed for employees of a parking facility. It utilizes the MERN stack (MongoDB, Express.js, React.js, Node.js) to provide a seamless and efficient communication platform for employees.
 
 ## Installation
 To install EasyPark Chat locally, follow these steps:
 1. Clone the repository:
-> git clone https://github.com/Frnn4268/EasyParkChat.git
+	> git clone https://github.com/Frnn4268/EasyParkChat.git
 
 2. Navigate to the project directory:
-> cd EasyParkChat
+	> cd EasyParkChat
 
 3. Install dependencies:
 	- For the Server
-> cd server
-npm install
+	> cd server
+	npm install
 
 	- For the Client
 > cd client
@@ -22,18 +29,17 @@ npm install
 	- Create a .env file in the server directory.
 	
 	- Define the following variables in the .env file:
-	
 	> PORT=your_server_port
 MONGODB_URI=your_mongodb_connection_string
 
 5. Start the server:
 	- In the server directory:
-> npm start
+	> npm start
 
 6. Start the client:
 
 	- In the client directory:
-> npm start
+	> npm start
 
 7. Access the application:
 
