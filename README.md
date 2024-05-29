@@ -30,6 +30,7 @@ To install EasyPark Chat locally, follow these steps:
 	
 	- Define the following variables in the .env file:
 	> PORT=your_server_port
+ 
 	> MONGODB_URI=your_mongodb_connection_string
 
 5. Start the server:
