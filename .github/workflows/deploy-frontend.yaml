@@ -22,7 +22,7 @@ jobs:
         run: npm install
       
       # Create .env file in public directory
-      name: Adding env file
+      - name: Adding env file
         run: echo "REACT_APP_API_URL=${{ secrets.BACKEND_URL }}" > public/.env
 
       # Build the React app in the public directory
@@ -69,7 +69,7 @@ jobs:
         run: npm install
       
       # Create .env file in public directory
-      name: Adding env file
+      - name: Adding env file
         run: echo "REACT_APP_API_URL=${{ secrets.BACKEND_URL }}" > public/.env
 
       # Build the React app in the public directory
