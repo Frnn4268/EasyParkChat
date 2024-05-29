@@ -46,6 +46,7 @@ jobs:
 
       # Deploy to remote host via SSH
       - name: Deploy to Remote Server
+        working-directory: public
         run: |
           echo "====== Deploy to production server ======"
           echo "====== Sync local and remote directory ======"
@@ -94,6 +95,7 @@ jobs:
 
       # Deploy to remote host via SSH
       - name: Deploy to Remote Server
+        working-directory: public
         run: |
           echo "====== Deploy to production server ======"
           echo "====== Sync local and remote directory ======"
