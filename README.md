@@ -61,17 +61,17 @@ MONGODB_URI=your_mongodb_connection_string
 Contributions are welcome! Please feel free to fork the repository and submit pull requests to contribute to this project. If you encounter any bugs or issues, please open a new issue on GitHub.
 
 ## Images
-1. Login:
+### 1. Login:
 ![Login](https://drive.google.com/uc?export=download&id=13XnGSaf2l9vxUnxEedit22mn9FOUVpWz)
    
-3. Register:
+### 2. Register:
 ![Register](https://drive.google.com/uc?export=download&id=1fAKaQzbZPlN6lOJs9srmIZPOxZjrNjFh)
    
-5. Avatar selector:
+### 3. Avatar selector:
 ![Avatar](https://drive.google.com/uc?export=download&id=1AngR7B2LK7B_UwATREDhRGcXWXkcMwxa)
    
-7. Home:
+### 4. Home:
 ![Home](https://drive.google.com/uc?export=download&id=1KHYSnoDQjYo_0r31bLTfzZInjpSMj5Qd)
    
-9. Chat:
+### 5. Chat:
 ![Chat](https://drive.google.com/uc?export=download&id=1UJc5VPja0sKNQ3bFhByoByMCQZWfuuf9)
