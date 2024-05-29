@@ -74,4 +74,4 @@ Contributions are welcome! Please feel free to fork the repository and submit pu
 ![Home](https://drive.google.com/uc?export=download&id=1KHYSnoDQjYo_0r31bLTfzZInjpSMj5Qd)
    
 ### 5. Chat:
-![Chat](https://drive.google.com/uc?export=download&id=1UJc5VPja0sKNQ3bFhByoByMCQZWfuuf9)
+![Chat](https://drive.google.com/uc?export=download&id=1NB88X3x51-hc3Svz4AF5xgR-754mq_f5)
