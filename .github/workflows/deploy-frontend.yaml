@@ -19,6 +19,7 @@ jobs:
       
       # Install dependencies
       - name: Install Dependencies
+        working-directory: public 
         run: npm install
       
       # Create .env file in public directory
@@ -66,6 +67,7 @@ jobs:
       
       # Install dependencies
       - name: Install Dependencies
+        working-directory: public 
         run: npm install
       
       # Create .env file in public directory
