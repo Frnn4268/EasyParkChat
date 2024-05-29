@@ -47,7 +47,6 @@ jobs:
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST1 }}
-        working-directory: server
   host-2:
     runs-on: chat-easypark-deploy   
     steps:
@@ -89,4 +88,3 @@ jobs:
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST2 }}
-        working-directory: server
