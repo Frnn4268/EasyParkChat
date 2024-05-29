@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
@@ -13,8 +13,7 @@ export default function Register() {
     position: "bottom-right",
     autoClose: 8000,
     pauseOnHover: true,
-    draggable: true,
-    theme: "dark",
+    draggable: true
   };
   const [values, setValues] = useState({
     username: "",
@@ -89,12 +88,12 @@ export default function Register() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            <img src={Logo} alt="logo"/>
+            <h1>Chat-EASYPARK</h1>
           </div>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Usuario"
             name="username"
             onChange={(e) => handleChange(e)}
           />
@@ -106,19 +105,19 @@ export default function Register() {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Contraseña"
             name="password"
             onChange={(e) => handleChange(e)}
           />
           <input
             type="password"
-            placeholder="Confirm Password"
+            placeholder="Confirma tu contraseña"
             name="confirmPassword"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">Create User</button>
+          <button type="submit">Crea un usuario</button>
           <span>
-            Already have an account ? <Link to="/login">Login.</Link>
+            Ya tienes una cuenta ? <Link to="/login">Logueate</Link>
           </span>
         </form>
       </FormContainer>
@@ -135,7 +134,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: white;
   .brand {
     display: flex;
     align-items: center;
@@ -154,7 +153,7 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #050D49;
     border-radius: 2rem;
     padding: 3rem 5rem;
   }

@@ -69,7 +69,7 @@ const Container = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: white;
   .container {
     height: 85vh;
     width: 85vw;

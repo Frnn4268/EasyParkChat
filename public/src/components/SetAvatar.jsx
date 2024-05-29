@@ -73,7 +73,7 @@ export default function SetAvatar() {
       ) : (
         <Container>
           <div className="title-container">
-            <h1>Pick an Avatar as your profile picture</h1>
+            <h1>Selecciona un Avatar para tu foto de perfil</h1>
           </div>
           <div className="avatars">
             {avatars.map((avatar, index) => {
@@ -94,7 +94,7 @@ export default function SetAvatar() {
             })}
           </div>
           <button onClick={setProfilePicture} className="submit-btn">
-            Set as Profile Picture
+            Establecer como foto de perfil
           </button>
           <ToastContainer />
         </Container>
@@ -109,7 +109,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  background-color: #131324;
+  background-color: #BDBDBD;
   height: 100vh;
   width: 100vw;
 

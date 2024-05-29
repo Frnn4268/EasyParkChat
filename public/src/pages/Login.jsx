@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
@@ -14,8 +14,7 @@ export default function Login() {
     position: "bottom-right",
     autoClose: 8000,
     pauseOnHover: true,
-    draggable: true,
-    theme: "dark",
+    draggable: true
   };
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
@@ -30,10 +29,10 @@ export default function Login() {
   const validateForm = () => {
     const { username, password } = values;
     if (username === "") {
-      toast.error("Email and Password is required.", toastOptions);
+      toast.error("Email y contraseña son requeridos", toastOptions);
       return false;
     } else if (password === "") {
-      toast.error("Email and Password is required.", toastOptions);
+      toast.error("Email y contraseña son requeridos", toastOptions);
       return false;
     }
     return true;
@@ -67,24 +66,24 @@ export default function Login() {
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            <h1>Chat-EASYPARK</h1>
           </div>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Usuario"
             name="username"
             onChange={(e) => handleChange(e)}
             min="3"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Contraseña"
             name="password"
             onChange={(e) => handleChange(e)}
           />
-          <button type="submit">Log In</button>
+          <button type="submit">Loguearse</button>
           <span>
-            Don't have an account ? <Link to="/register">Create One.</Link>
+            No tienes una cuenta ? <Link to="/register">Crea una</Link>
           </span>
         </form>
       </FormContainer>
@@ -101,7 +100,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  background-color: white; 
   .brand {
     display: flex;
     align-items: center;
@@ -120,7 +119,7 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: #050D49;
     border-radius: 2rem;
     padding: 5rem;
   }

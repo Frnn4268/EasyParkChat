@@ -14,9 +14,9 @@ export default function Welcome() {
     <Container>
       <img src={Robot} alt="" />
       <h1>
-        Welcome, <span>{userName}!</span>
+        Bienvenido, <span>{userName}!</span>
       </h1>
-      <h3>Please select a chat to Start messaging.</h3>
+      <h3>Selecciona un chat para empezar a chatear.</h3>
     </Container>
   );
 }
