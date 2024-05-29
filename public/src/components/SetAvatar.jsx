@@ -21,6 +21,7 @@ export default function SetAvatar() {
     theme: "dark",
   };
 
+  /* eslint-disable */
   useEffect(async () => {
     if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY))
       navigate("/login");

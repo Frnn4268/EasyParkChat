@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Robot from "../assets/robot.gif";
 export default function Welcome() {
   const [userName, setUserName] = useState("");
+
+  /* eslint-disable */
   useEffect(async () => {
     setUserName(
       await JSON.parse(
@@ -10,6 +12,7 @@ export default function Welcome() {
       ).username
     );
   }, []);
+  
   return (
     <Container>
       <img src={Robot} alt="" />

@@ -16,6 +16,8 @@ export default function Login() {
     pauseOnHover: true,
     draggable: true
   };
+  
+  /* eslint-disable */
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");

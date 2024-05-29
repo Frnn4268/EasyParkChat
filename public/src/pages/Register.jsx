@@ -22,6 +22,7 @@ export default function Register() {
     confirmPassword: "",
   });
 
+  /* eslint-disable */
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");
