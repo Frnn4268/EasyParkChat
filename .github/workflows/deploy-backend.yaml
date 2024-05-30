@@ -44,6 +44,7 @@ jobs:
           echo "====== Sync local and remote directory ======"
           rsync -azPq -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete ./build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST1 }}:/home/ubuntu/backend/ --rsync-path="sudo rsync"
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST1 }} 'pm2 delete backend && pm2 start index.js --name backend'
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST1 }} 'sudo systemctl restart pm2'
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST1 }}
@@ -85,6 +86,7 @@ jobs:
           echo "====== Sync local and remote directory ======"
           rsync -azPq -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete ./build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST2 }}:/home/ubuntu/backend/ --rsync-path="sudo rsync"
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST2 }} 'pm2 delete backend && pm2 start index.js --name backend'
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST2 }} 'sudo systemctl restart pm2'
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST2 }}
