@@ -23,7 +23,6 @@ jobs:
         run: | 
           npm install
           echo MONGO_URL="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
-          npm run build
                 
       # Set up SSH key from GitHub Secrets
       - name: Set up SSH key
@@ -65,7 +64,6 @@ jobs:
         run: | 
           npm install
           echo MONGO_URL="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
-          npm run build
                 
       # Set up SSH key from GitHub Secrets
       - name: Set up SSH key
