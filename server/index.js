@@ -10,6 +10,9 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+// Set the strictQuery option
+mongoose.set('strictQuery', true); // or false, depending on your preference
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
