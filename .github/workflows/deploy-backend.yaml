@@ -9,19 +9,23 @@ jobs:
   deploy-host-1:
     runs-on: chat-easypark-deploy
     steps:
+      # Checkout the repository
       - uses: actions/checkout@v3
 
+      # Setup Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
+      # Install project dependencies
       - name: Install Dependencies
         working-directory: server
         run: |
           npm install
           echo MONGO_URL="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
 
+      # Set up SSH key for authentication
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
@@ -32,6 +36,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST1 }}
 
+      # Deploy to the remote server
       - name: Deploy to Remote Server
         working-directory: server
         run: |
@@ -47,19 +52,23 @@ jobs:
   deploy-host-2:
     runs-on: chat-easypark-deploy
     steps:
+      # Checkout the repository
       - uses: actions/checkout@v3
 
+      # Setup Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
+      # Install project dependencies
       - name: Install Dependencies
         working-directory: server
         run: |
           npm install
           echo MONGO_URL="mongodb+srv://Frnn:noobculo@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
 
+      # Set up SSH key for authentication
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
@@ -70,6 +79,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST2 }}
 
+       # Deploy to the remote server
       - name: Deploy to Remote Server
         working-directory: server
         run: |

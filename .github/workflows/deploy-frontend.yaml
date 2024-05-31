@@ -55,6 +55,7 @@ jobs:
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_HOST: ${{ secrets.SSH_HOST1 }}
+          
   host-2:
     runs-on: self-hosted  
     steps:
