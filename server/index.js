@@ -7,23 +7,10 @@ const app = express();
 const socket = require("socket.io");
 
 require("dotenv").config();
+require('./config/databaseConnection')
 
 app.use(cors());
 app.use(express.json());
-
-mongoose.set('strictQuery', true); 
-
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("DB Connetion Successfull");
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
 
 app.get("/ping", (_req, res) => {
   return res.json({ msg: "Ping Successful" });
