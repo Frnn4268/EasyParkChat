@@ -5,13 +5,13 @@ const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
 const app = express();
 const socket = require("socket.io");
+
 require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
 
-// Set the strictQuery option
-mongoose.set('strictQuery', true); // or false, depending on your preference
+mongoose.set('strictQuery', true); 
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -32,10 +32,10 @@ app.get("/ping", (_req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-const port = 4000
-const server = app.listen(port, () =>
-  console.log(`Server started on 4000`)
+const server = app.listen(process.env.PORT, () =>
+  console.log(`Server started on ${process.env.PORT}`)
 );
+
 const io = socket(server, {
   cors: {
     origin: "http://localhost:3000",

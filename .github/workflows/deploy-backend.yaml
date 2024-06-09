@@ -23,7 +23,8 @@ jobs:
         working-directory: server
         run: |
           npm install
-          echo MONGO_URL="mongodb+srv://Frnn:@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
+          echo MONGO_URL="mongodb+srv://Frnn:@mongocluster.o2eojyk.mongodb.net/EasyParkChat?retryWrites=true&w=majority" > .env
+          echo PORT=4000 >> .env
 
       # Set up SSH key for authentication
       - name: Set up SSH key
@@ -66,7 +67,8 @@ jobs:
         working-directory: server
         run: |
           npm install
-          echo MONGO_URL="mongodb+srv://Frnn:@mongocluster.o2eojyk.mongodb.net/snappy?retryWrites=true&w=majority" > .env
+          echo MONGO_URL="mongodb+srv://Frnn:@mongocluster.o2eojyk.mongodb.net/EasyParkChat?retryWrites=true&w=majority" > .env
+          echo PORT=4000 >> .env
 
       # Set up SSH key for authentication
       - name: Set up SSH key
